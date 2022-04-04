@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+span{
+    display: block;
+}
+.container h2{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 130px;
+    color: #000;
+    text-transform: uppercase;
+    /* -webkit-text-stroke: 1px #333; */
+    cursor: pointer;
+    /* color: transparent; */
+    transition: 0.5s;
+}
+.container h2:hover{
+    color: transparent;
+}
+.container h2 span:nth-child(1){
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    font-size: 130px;
+    color: #333;
+    display: block;
+    -webkit-text-stroke: 2px #fff;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 100% 55%, 1% 55%);
+    overflow: hidden;
+
+
+    opacity: 0;
+   
+}
+.container h2:hover span:nth-child(1){
+ 
+    transform: translateY(-40px);
+    opacity: 1;
+}
+.container h2:hover span:nth-child(2){
+    
+    transform: translateY(30px) ;
+    opacity: 1;
+}
+.container h2:hover span:nth-child(3){
+   
+    opacity: 1;
+}
+.container span:nth-child(2){
+
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        font-size: 130px;
+        color: #333;
+        display: block;
+        -webkit-text-stroke: 2px #fff;
+        cursor: pointer;
+        clip-path: polygon(0 100%, 100% 100%, 100% 51%, 1% 51%);
+        overflow: hidden;
+        transform: scale(0);
+        opacity: 0;
+     
+    
+}
+.container span:nth-child(3){
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: 0.5s;
+   
+    background-color: #fbc531;
+    width: 96%;
+   
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    display: block;
+    letter-spacing: 7px;
+    -webkit-text-stroke: 2px #fff;
+    cursor: pointer;
+  /* background-color: red; */
+    overflow: hidden;
+    opacity: 0;
+  margin-left: 10px;
+  transition: 0.5;
+}
